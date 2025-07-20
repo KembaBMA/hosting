@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <script src="JS/main.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 id="name">Marcos Magazine</h1>
+    <div class="nav-links">
+    <a href="index.html">Inicio</a> |
+    <a href="galeria.html">Galería</a> |
+    <a href="presupuesto.html">Formulario</a> |
+    <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <section id="noticias">
+    <div id="noticia"><h2>Noticias</h2></div>
+    <ul id="lista-noticias"></ul>
+  </section>
+  <script id="data-json" type="application/json">
+    {
+  "noticias": [
+    {
+      "titulo": "Noticia 1: Lanzamiento del sitio web",
+      "descripcion": "Nuestro nuevo sitio ya está disponible para todos los usuarios."
+    },
+    {
+      "titulo": "Noticia 2: Nueva galería disponible",
+      "descripcion": "Ahora puedes ver nuestra galería completa."
+    },
+    {
+      "titulo": "Noticia 3: Actualización de contenido",
+      "descripcion": "Se han añadido nuevas secciones con información relevante."
+    }
+  ]
+}
+</script>
+
+  <footer>©Marcos Magazine</footer>
+</body>
+</html>
