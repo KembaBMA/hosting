@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("JSON/noticias.json")
+  fetch("json/noticias.json")
     .then(response => {
       if (!response.ok) {
         throw new Error("No se pudo cargar el archivo JSON");
