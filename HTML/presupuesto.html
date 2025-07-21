@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="../CSS/estilo.css">
+  <script src="../JS/presupuesto.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 id="name">Marcos Magazine</h1>
+    <div class="nav-links">
+      <a href="../index.html">Inicio</a> |
+    <a href="galeria.html">Galería</a> |
+    <a href="presupuesto.html">Formulario</a> |
+    <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main id="formm">
+    <div class="formulario-container">
+      <form id="form-contacto">
+        <h2>Datos de contacto</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="15" required>
+        <div class="error" id="error-nombre"></div>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+        <div class="error" id="error-apellidos"></div>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" maxlength="9" required>
+        <div class="error" id="error-telefono"></div>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <div class="error" id="error-correo"></div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <form id="form-presupuesto" style="display: none;">
+        <h2>Presupuesto</h2>
+
+        <label for="producto">Producto:</label>
+        <select id="producto" required>
+          <option value="">Selecciona un producto</option>
+          <option value="250">Portátil - 250€</option>
+          <option value="100">Disco duro externo (5TB) - 100€</option>
+          <option value="50">Ratón gamer - 50€</option>
+        </select>
+
+        <label for="plazo">Plazo de entrega (días):</label>
+        <input type="number" id="plazo" min="1" required>
+
+        <label>Extras:</label>
+        <div class="extras-group">
+          <label><input type="checkbox" class="extra" value="50"> Soporte (+50€)</label>
+          <label><input type="checkbox" class="extra" value="100"> Instalación (+100€)</label>
+          <label><input type="checkbox" class="extra" value="150"> Garantía (+150€)</label>
+        </div>
+
+        <label for="total">Presupuesto total:</label>
+        <input type="text" id="total" readonly>
+
+        <label><input type="checkbox" id="condiciones" required> Acepto los términos y condiciones</label>
+        <button type="submit">Enviar presupuesto</button>
+      </form>
+    </div>
+  </main>
+</body>
+<footer>© Marcos Magazine</footer>
+</html>

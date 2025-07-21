@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../CSS/estilo.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+</head>
+<body class="contact-page">
+  <nav class="navbar">
+    <h1 id="name">Marcos Magazine</h1>
+    <div class="nav-links">
+      <a href="../index.html">Inicio</a> |
+    <a href="galeria.html">Galería</a> |
+    <a href="presupuesto.html">Formulario</a> |
+    <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main id="content">
+    <header>
+      <h2>Contáctanos</h2>
+    </header>
+    <div class="contenido-contacto">
+      <div class="mapa">
+        <h3>Ubicación de la empresa</h3>
+        <button id="btnMostrarRuta" style="display:none;">Mostrar ruta</button>
+        <div id="map"></div>
+      </div>
+
+      <div id="formular">
+        <h3>Datos de contacto</h3>
+        <p>Dirección: Calle Ficticia 3, Madrid, España</p>
+        <p>Teléfono: +34 646 789 734</p>
+        <p>Email: contacto@empresa.com</p>
+        <h3>Envíanos un mensaje</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Tu nombre" required />
+          <input type="email" placeholder="Tu correo electrónico" required />
+          <textarea rows="5" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js" defer></script>
+<script src="../JS/contacto.js" defer></script>
+  <footer>© Marcos Magazine</footer>
+</body>
+</html>
