@@ -1,0 +1,18 @@
+ [
+    {
+      "titulo": "Noticia 1: Lanzamiento del sitio web",
+      "descripcion": "Nuestro nuevo sitio ya está disponible para todos los usuarios."
+    },
+    {
+      "titulo": "Noticia 2: Nueva galería disponible",
+      "descripcion": "Ahora puedes ver nuestra galería completa."
+    },
+    {
+      "titulo": "Noticia 3: Actualización de contenido",
+      "descripcion": "Se han añadido nuevas secciones con información relevante."
+    },
+    {
+        "titulo": "Noticia 4: Nueva forma de contacto",
+        "descripcion": "Se ha añadido un mapa interactivo para saber mejor como contactarnos."
+    }
+]
